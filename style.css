@@ -1,0 +1,17 @@
+body{
+    background: linear-gradient(#87CEEB 30%, #252280 80%);
+    color:rgb(228, 159, 30);
+}
+.headding{
+    width: 70%;
+    background: linear-gradient(#97daa8 30%, #064e12 80%);
+}
+.Nombre_de_objs,#resuelto,#precisión{
+    font-size: x-large;
+    color:darkred;
+}
+#camara{
+    border:1.5px dashed lightslategrey;
+    width: 350;
+    height:300;
+}

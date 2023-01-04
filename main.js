@@ -16,3 +16,18 @@ classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models
 function modeloaded(){
     console.log("Modelo cargado")
 }
+function verificar(){
+    img = document.getElementById("selfie");
+    classifier.classify(img, got_result);
+}
+function got_result(error, results){
+    if (error){
+        console.log(error);
+        
+    }else{
+        console.log(results)
+        document.getElementById("resuelto").innerHTML = results[0].label;
+        document.getElementById("precision").innerHTML = results[0].confidence.toFixed(3)
+    }
+}
+
